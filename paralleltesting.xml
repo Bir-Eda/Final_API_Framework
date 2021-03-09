@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Paralel Testing" parallel="tests" thread-count="2">
+    <test name="GoRest Api">
+        <classes>
+            <class name="examples.GoRestAPI_IkinciHali"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="RahulShetty Api">
+        <classes>
+            <class name="examples.POST_GET"/>
+        </classes>
+
+    </test> <!-- Test -->
+
+    <test name="GoRest Api2">
+        <classes>
+            <class name="examples.GoRestAPIDataProviderTest"/>
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
